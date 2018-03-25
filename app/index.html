@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="citibike" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="citibike" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="citibike" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="citibike" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New York City Bike Dashboard</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div layout="row" layout-padding layout-wrap layout-fill style="padding-bottom: 10px;" ng-cloak>
+    <google-citi-bike-map></google-citi-bike-map>
+    <graph-current-usage></graph-current-usage>
+    <usage-timeline></usage-timeline>
+</div>
+
+
+<!-- js imports-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-aria/angular-aria.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+<script src="bower_components/angular-messages/angular-messages.js"></script>
+<script src="bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/momentjs/moment.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqSaZMh11ZkzYX3FQkMiuQbBkgRbhqJYc&libraries=places"></script>
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="app.js"></script>
+<script src="common/station_data_sevice.js"></script>
+<script src="map_widget/map_directive.js"></script>
+<script src="map_widget/map_data_service.js"></script>
+<script src="graph_current_usage_widget/graph_current_usage_directive.js"></script>
+<script src="graph_min_usage_widget/graph_min_usage_directive.js"></script>
+</body>
+</html>
