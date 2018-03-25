@@ -17,4 +17,4 @@ To start this application, please perform the following steps:
 * Execute "npm install". This will install all the required node modules and bower components inside the project directory. If it prompts to tell the version of AngularJS to be installed, please choose AngularJS 1.6.9.
 * Copy the project directory (citibikenyc) to a webserver.
 * Start the webserver.
-* Go to the browser and hit "http://<webserver host>:<webserver port>/citibikenyc/app/index.html"
+* Go to the browser and hit "http://\<webserver host\>:\<webserver port\>/citibikenyc/app/index.html"
